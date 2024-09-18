@@ -41,7 +41,7 @@
 }
 
 .bgimg {
-    height: calc(100vh - 104px);
+    height: calc(100vh - 147px);
     width: 100%;
     background-image: url(../img/bgimg.jpg);
     background-size: cover;
@@ -102,9 +102,15 @@ footer .cr {
     color: #603140;
 }
 
+.textoRecetas {
+    margin: 30px;
+    padding: 30px;
+    font-size: 20px;
+}
+
 .listaRecetas ul li {
-    display: inline-block;
-    margin: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .ulRecetas li a {
@@ -169,6 +175,9 @@ footer .cr {
 @media (max-width:700px) {
     .bienvenidos {
         font-size: 50px;
+    }
+    .fotobienvenida {
+        display: none;
     }
 }
 
