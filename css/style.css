@@ -48,6 +48,10 @@
     background-position: right;
 }
 
+.button {
+    color: #ffffff;
+}
+
 .bienvenidos {
     color: #ffffff;
     font-size: 100px;
@@ -67,6 +71,11 @@ section {
     width: 300px;
     height: auto;
     padding: 40px;
+}
+
+.sobreNosotros {
+    font-size: 20px;
+    margin: 30px;
 }
 
 footer {
@@ -145,4 +154,31 @@ footer .cr {
 .tienda {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width:991px) {
+    .bienvenidos {
+        padding-right: 15vh;
+        font-size: 75px;
+    }
+    .bgimg {
+        background-position: center;
+    }
+}
+
+@media (max-width:700px) {
+    .bienvenidos {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:540px) {
+    .bienvenidos {
+        font-size: 45px;
+        padding-right: 5vh;
+        padding-top: 25vh;
+    }
+    .fotobienvenida {
+        display: none;
+    }
 }
