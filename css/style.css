@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 #header{
@@ -60,6 +59,7 @@
 section {
     background-color: #BF9DA1;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -145,8 +145,4 @@ footer .cr {
 .tienda {
     display: flex;
     justify-content: space-between;
-}
-
-.textoRecetas {
-    margin: 20px 30px 0 30px;
 }
