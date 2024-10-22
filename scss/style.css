@@ -145,25 +145,31 @@ footer .cr {
   margin: 30px;
 }
 
-.recetas {
-  display: grid;
-}
-
-.contenidoRecetas {
-}
-
 .tituloComida {
   display: flex;
   justify-content: center;
   font-family: fantasy;
 }
 
-.grid-container {
-}
-
 .tienda {
   display: flex;
   justify-content: space-between;
+}
+
+.tarjetas {
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 10px;
+  height: 900px;
+  background-color: #603140;
+  color: #BF9DA1;
+}
+
+.list-group-item {
+  background-color: #BF9DA1;
+  color: #603140;
 }
 
 @media (max-width: 991px) {
@@ -177,6 +183,12 @@ footer .cr {
   .imgRecetas {
     width: 200px;
     height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 700px) {
@@ -202,4 +214,4 @@ footer .cr {
   .imgRecetas {
     display: none;
   }
-}
+}/*# sourceMappingURL=style.css.map */
