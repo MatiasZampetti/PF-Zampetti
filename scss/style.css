@@ -90,6 +90,7 @@ footer .cr {
 
 #main {
   background-color: #BF9DA1;
+  min-height: 100vh;
 }
 
 .titulo {
@@ -154,18 +155,12 @@ footer .cr {
   font-family: fantasy;
 }
 
-.tienda {
-  display: flex;
-  justify-content: space-between;
-}
-
 .tarjetas {
   justify-content: space-evenly;
 }
 
 .card {
   margin: 10px;
-  height: 900px;
   background-color: #603140;
   color: #BF9DA1;
 }
