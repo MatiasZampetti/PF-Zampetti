@@ -47,24 +47,22 @@
     <main id="main">
         <h1 class="tituloRecetas">CONTACTO</h1>
         <div class="formularioContacto">
-            <form action="contacto">
-                <label for="Nombre">Nombre</label>
-                <input type="Nombre" id="Nombre" placeholder="¿Cúal es su nombre?" required>
-                <br><br>
-                <label for="Apellido">Apellido</label>
-                <input type="Apellido" id="Apellido" placeholder="¿Cúal es su apellido?" required>
-                <br><br>
-                <label for="Telefono">Telefono</label>
-                <input type="Telefono" id="Telefono" placeholder="Ingrese su numero" required>
-                <br><br>
-                <input type="submit" value="Guardar">
-                <input type="submit" value="Borrar">
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Tu email">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Asunto del mensaje">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                <button type="submit">Enviar Mensaje</button>
             </form>
         </div>
     </main>
     <footer>
         <div class="footer-container">
-            <div class="footer-section">
+            <div class="footer-section testimoniosDeClientes">
                 <h4>Testimonios de Clientes</h4>
                 <p>"Esencia Viva me ayuda mucho a la hora de cocinar!" - María G.</p>
                 <p>"Los mejores productos para la cocina se encuentran aqui" - Gonzalo L.</p>
