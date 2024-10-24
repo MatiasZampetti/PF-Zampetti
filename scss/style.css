@@ -7,22 +7,6 @@
   background-color: #603140;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  padding: 10px;
-  height: 80px;
-  width: auto;
-}
-
-.navbar ul li {
-  display: inline-block;
-}
-
 .ulnav li a {
   text-decoration: none;
   color: #BF9DA1;
@@ -30,13 +14,11 @@
   padding: 10px;
   border-radius: 10px;
 }
-
 .ulnav a:hover {
   color: #603140;
   background-color: #BF9DA1;
   transform: scale(1.1);
 }
-
 .ulnav li .listaContacto {
   margin-right: 25px;
 }
@@ -48,12 +30,7 @@
   background-size: cover;
   background-position: right;
 }
-
-.button {
-  color: #ffffff;
-}
-
-.bienvenidos {
+.bgimg .bienvenidos {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
@@ -68,14 +45,12 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-
-.fotobienvenida {
+section .fotobienvenida {
   width: 300px;
   height: auto;
   padding: 40px;
 }
-
-.sobreNosotros {
+section .sobreNosotros {
   font-size: 20px;
   margin: 30px;
 }
@@ -86,56 +61,46 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
-.footer-container {
+footer .footer-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
 }
-
-.footer-section {
+footer .footer-section {
   flex: 1;
   margin: 10px;
 }
-
-.footer-section h4 {
+footer .footer-section h4 {
   margin-bottom: 15px;
   font-size: 18px;
 }
-
-.footer-section p, .footer-section ul {
+footer .footer-section p, footer .footer-section ul {
   font-size: 14px;
   line-height: 1.6;
 }
-
-.footer-section ul {
+footer .footer-section ul {
   list-style: none;
   padding: 0;
 }
-
-.footer-section ul li {
+footer .footer-section ul li {
   margin-bottom: 10px;
 }
-
-.footer-section ul li a {
+footer .footer-section ul li a {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
-.footer-section ul li a:hover {
+footer .footer-section ul li a:hover {
   color: #BF9DA1;
   transform: scale(1.1);
 }
-
-.footer-bottom {
+footer .footer-bottom {
   margin-top: 20px;
   border-top: 1px solid #ffffff;
   padding-top: 10px;
 }
-
-.footer-bottom p {
+footer .footer-bottom p {
   font-size: 12px;
   margin: 0;
 }
@@ -144,20 +109,30 @@ footer {
   background-color: #BF9DA1;
   min-height: 100vh;
 }
-
-.textoRecetas {
-  margin: 30px;
-  padding: 30px;
+#main .titulosPrincipales {
+  font-size: 55px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #603140;
+}
+#main .tituloRecetas {
+  margin-top: 90px;
+}
+#main .textoRecetas {
+  padding: 20px 70px;
   font-size: 20px;
 }
-
-.listaRecetas ul li {
+#main .ulRecetas {
+  display: flex;
+  justify-content: space-evenly;
+}
+#main .ulRecetas li {
   display: flex;
   justify-content: space-around;
-  margin: 10px;
+  margin: 30px;
 }
-
-.ulRecetas li a {
+#main .ulRecetas li a {
   text-decoration: none;
   font-size: 25px;
   color: #603140;
@@ -165,51 +140,71 @@ footer {
   border-radius: 10px;
   border: 3px solid;
 }
-
-.ulRecetas {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.ulRecetas a:hover {
+#main .ulRecetas a:hover {
   color: #BF9DA1;
   background-color: #603140;
 }
-
-.tituloRecetas {
-  padding: 20px 20px 20px 60px;
-  font-size: 55px;
-  font-family: fantasy;
-  display: flex;
-  justify-content: center;
-  color: #603140;
-}
-
-.imgRecetas {
-  width: 400px;
-  height: 250px;
-  margin: 30px;
-}
-
-.tituloComida {
-  display: flex;
-  justify-content: center;
-  font-family: fantasy;
-}
-
-.tarjetas {
+#main .tarjetas {
   justify-content: space-evenly;
 }
-
-.card {
+#main .tarjetas .card {
   margin: 10px;
   background-color: #603140;
   color: #BF9DA1;
 }
-
-.list-group-item {
+#main .tarjetas .card .list-group-item {
   background-color: #BF9DA1;
   color: #603140;
+}
+#main .botonAceptar {
+  background-color: #BF9DA1;
+  text-transform: uppercase;
+  color: black;
+}
+#main .botonAceptar:hover {
+  background-color: green;
+}
+#main .formularioContacto {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+#main .formularioContacto .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #603140;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+#main .formularioContacto .contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+#main .formularioContacto .contact-form input, #main .formularioContacto .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#main .formularioContacto .contact-form .botonAceptar {
+  width: 100%;
+  padding: 10px;
+  background-color: #BF9DA1;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+#main .formularioContacto .contact-form .botonAceptar:hover {
+  background-color: green;
 }
 
 .galeriaimg {
@@ -222,8 +217,7 @@ footer {
   min-height: 100vh;
   background-color: #f4f4f4;
 }
-
-.galeria {
+.galeriaimg .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
@@ -232,75 +226,15 @@ footer {
   width: 90%;
   margin: auto;
 }
-
-.galeria img {
+.galeriaimg .galeria img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-
-.galeria img:hover {
+.galeriaimg .galeria img:hover {
   transform: scale(1.07);
-}
-
-.botonComprar {
-  background-color: #BF9DA1;
-  text-transform: uppercase;
-}
-
-.botonComprar:hover {
-  background-color: green;
-}
-
-.formularioContacto {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #603140;
-  border-radius: 8px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: white;
-}
-
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #BF9DA1;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-transform: uppercase;
-}
-
-.contact-form button:hover {
-  background-color: green;
-  color: white;
 }
 
 .volver {
@@ -321,7 +255,6 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-/* Cambio de color al pasar el cursor */
 .volver:hover {
   background-color: #858585;
 }
