@@ -245,6 +245,15 @@ footer {
   transform: scale(1.07);
 }
 
+.botonComprar {
+  background-color: #BF9DA1;
+  text-transform: uppercase;
+}
+
+.botonComprar:hover {
+  background-color: green;
+}
+
 .formularioContacto {
   display: flex;
   justify-content: center;
