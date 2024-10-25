@@ -3,220 +3,209 @@
     padding: 0;
 }
 
-//HEADER
 #header {
     background-color: #603140;
 }
 
-//NAVBAR
-.ulnav{
-    li a{
-        text-decoration: none;
-        color: #BF9DA1;
-        font-size: 25px;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    a:hover{
-        color: #603140;
-        background-color: #BF9DA1;
-        transform: scale(1.1);
-    }
-    li .listaContacto{
-        margin-right: 25px;
-    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-//BGIMAGE DE INDEX
+.logo img {
+    padding: 10px;
+    height: 80px;
+    width: auto;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.ulnav li a {
+    text-decoration: none;
+    color: #BF9DA1;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ulnav a:hover {
+    color: #603140;
+    background-color: #BF9DA1;
+    transform: scale(1.10);
+}
+
+.ulnav li .listaContacto {
+    margin-right: 25px;
+}
+
 .bgimg {
     height: calc(100vh - 147px);
     width: 100%;
     background-image: url(../img/bgimg.jpg);
     background-size: cover;
     background-position: right;
-    .bienvenidos { //TEXTO SOBRE LA BGIMAGE
-        color: #ffffff;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 100px;
-        float: right;
-        padding-right: 25vh;
-        padding-top: 25vh;
-    }
 }
 
-//DESCRIPCION DEL SITIO
-.paginaPrincipal {
+.button {
+    color: #ffffff;
+}
+
+.bienvenidos {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    float: right;
+    padding-right: 25vh;
+    padding-top: 25vh;
+}
+
+section {
     background-color: #BF9DA1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .fotobienvenida{ //FOTO DEL TEXTO
-        width: 300px;
-        height: auto;
-        padding: 40px;
-    }
-    .sobreNosotros { //TEXTO DE INDEX
-        font-size: 20px;
-        margin: 30px;
-    }
 }
 
-//FOOTER
+.fotobienvenida {
+    width: 300px;
+    height: auto;
+    padding: 40px;
+}
+
+.sobreNosotros {
+    font-size: 20px;
+    margin: 30px;
+}
+
 footer {
     background-color: #603140;
     color: white;
     padding: 20px 0;
     text-align: center;
-    .footer-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-    .footer-section{
-        flex: 1;
-        margin: 10px;
-        h4{
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        p, ul{
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        ul{
-            list-style: none;
-            padding: 0;
-            li{
-                margin-bottom: 10px;
-                a{
-                    color: white;
-                    text-decoration: none;
-                    transition: color 0.3s ease;
-                }
-                a:hover{
-                    color: #BF9DA1;
-                    transform: scale(1.10);
-                }
-            }
-        }
-    }
-    .footer-bottom{
-        margin-top: 20px;
-        border-top: 1px solid #ffffff;
-        padding-top: 10px;
-        p{
-            font-size: 12px;
-            margin: 0;
-        }
-    }
 }
 
-//MAIN
-#main{
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #BF9DA1;
+    transform: scale(1.10);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    margin: 0;
+}
+
+#main {
     background-color: #BF9DA1;
     min-height: 100vh;
-    .titulosPrincipales { //TITULOS PRINCIPALES DE TODO EL SITIO
-        font-size: 55px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        display: flex;
-        justify-content: center;
-        color: #603140;
-    }
-    .tituloRecetas{
-        margin-top: 90px;
-    }
-    .textoRecetas{ //TEXTO DE RECETAS
-        padding: 20px 70px;
-        font-size: 20px;
-    }
-    .ulRecetas{ //NAV DE RECETAS
-        display: flex;
-        justify-content: space-evenly;
-        li {
-            display: flex;
-            justify-content: space-around;
-            margin: 30px;
-            a{
-                text-decoration: none;
-                font-size: 25px;
-                color: #603140;
-                padding: 10px;
-                border-radius: 10px;
-                border: 3px solid;
-            }
-        }
-        a:hover{
-            color: #BF9DA1;
-            background-color: #603140;
-        }
-    }
-    .tarjetas{ //CARDS DE RECETAS
-        justify-content: space-evenly;
-        .card{
-            margin: 10px;
-            background-color: #603140;
-            color: #BF9DA1;
-            .list-group-item{
-                background-color: #BF9DA1;
-                color: #603140;
-            }
-        }
-    }
-    .botonAceptar{ //BUTTONS DE CARDS DE TIENDA
-        background-color: #BF9DA1;
-        text-transform: uppercase;
-        color: black;
-    }
-    
-    .botonAceptar:hover{
-        background-color: green;
-    }
-    .formularioContacto{ //FORM DE CONTACTO
-        display: flex;
-        justify-content: center;
-        padding-bottom: 30px;
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #603140;
-            border-radius: 8px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            label {
-                display: block;
-                margin-bottom: 8px;
-                font-weight: bold;
-                color: white;
-            }
-            input, textarea {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 15px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 16px;
-            }
-            .botonAceptar { //BOTON DE ENVIAR MENSAJE
-                width: 100%;
-                padding: 10px;
-                background-color: #BF9DA1;
-                color: black;
-                border: none;
-                border-radius: 5px;
-                font-size: 18px;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-                text-transform: uppercase;
-            }
-            .botonAceptar:hover {
-                background-color: green;
-            }
-        }
-    }
 }
 
-//GALERIA DE IMAGENES
+.textoRecetas {
+    margin: 30px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.listaRecetas ul li {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.ulRecetas li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #603140;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid;
+}
+
+.ulRecetas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ulRecetas a:hover {
+    color: #BF9DA1;
+    background-color: #603140;
+}
+
+.tituloRecetas {
+    padding: 20px 20px 20px 60px;
+    font-size: 55px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #603140;
+}
+
+.imgRecetas {
+    width: 400px;
+    height: 250px;
+    margin: 30px;
+}
+
+.tarjetas{
+    justify-content: space-evenly;
+}
+
+.card{
+    margin: 10px;
+    background-color: #603140;
+    color: #BF9DA1;
+}
+
+.list-group-item{
+    background-color: #BF9DA1;
+    color: #603140;
+}
+
 .galeriaimg {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -234,20 +223,78 @@ footer {
         max-width: 1000px;
         width: 90%;
         margin: auto;
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        img:hover {
-            transform: scale(1.07);
-        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .galeria img:hover {
+        transform: scale(1.07);
     }
 }
 
-//BOTON FIJADO PARA SUBIR
+.botonComprar{
+    background-color: #BF9DA1;
+    text-transform: uppercase;
+    color: black;
+}
+
+.botonComprar:hover{
+    background-color: green;
+}
+
+.formularioContacto{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #603140;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #BF9DA1;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background-color: green;
+    color: white;
+}
+
 .volver {
     position: fixed;
     bottom: 20px;
@@ -266,61 +313,59 @@ footer {
     transition: background-color 0.3s ease;
 }
 
+  /* Cambio de color al pasar el cursor */
 .volver:hover {
     background-color: #858585;
 }
 
-//MEDIA QUERIES
-// @media (max-width: 991px) {
-//     .bienvenidos {
-//         padding-right: 15vh;
-//         font-size: 75px;
-//     }
-//     .bgimg {
-//         background-position: center;
-//     }
-//     .imgRecetas {
-//         width: 200px;
-//         height: auto;
-//     }
-// }
+@media (max-width: 991px) {
+    .bienvenidos {
+        padding-right: 15vh;
+        font-size: 75px;
+    }
+    .bgimg {
+        background-position: center;
+    }
+    .imgRecetas {
+        width: 200px;
+        height: auto;
+    }
+}
 
-// @media (max-width: 767px) {
-//     .tarjetas {
-//         display: flex;
-//         flex-direction: column;
-//     }
-// }
+@media (max-width: 767px) {
+    .tarjetas {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-// @media (max-width: 700px) {
-//     .bienvenidos {
-//         font-size: 50px;
-//     }
-//     .fotobienvenida {
-//         display: none;
-//     }
-//     .ulRecetas {
-//         display: flex;
-//         flex-direction: column;
-//     }
-
-// }
-// @media (max-width: 540px) {
-//     .bienvenidos {
-//         font-size: 45px;
-//         padding-right: 5vh;
-//         padding-top: 55vh;
-//     }
-//     .bgimg{
-//         background-position: left;
-//     }
-//     .fotobienvenida {
-//         display: none;
-//     }
-//     .imgRecetas {
-//         display: none;
-//     }
-//     .testimoniosDeClientes{
-//         display: none;
-//     }
-// }
+@media (max-width: 700px) {
+    .bienvenidos {
+        font-size: 50px;
+    }
+    .fotobienvenida {
+        display: none;
+    }
+    .ulRecetas {
+        display: grid;
+    }
+}
+@media (max-width: 540px) {
+    .bienvenidos {
+        font-size: 45px;
+        padding-right: 5vh;
+        padding-top: 55vh;
+    }
+    .bgimg{
+        background-position: left;
+    }
+    .fotobienvenida {
+        display: none;
+    }
+    .imgRecetas {
+        display: none;
+    }
+    .testimoniosDeClientes{
+        display: none;
+    }
+}
